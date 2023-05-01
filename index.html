@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5fe16fb9fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center fw-bold mt-4">AI Universe Hub</h1>
+    </header>
+    <main class="container-fluid mt-4">
+        <!-- Sorting Button  -->
+        <section>
+            <div class="pb-4">
+                <button type="button" id="btn-sort" class="btn btn-danger mt-3 position-absolute top-5 start-50 translate-middle">Sort By Date</button>
+            </div>
+        </section>
+        <!-- Grid Items  -->
+        <section class="mt-5">
+            <div id="ai-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+            <!-- See More  -->
+            <div id="show-all" class="text-center d-none">
+                <button type="button" id="btn-show-all" class="btn btn-danger mt-5 position-absolute start-50 translate-middle">See More</button>
+            </div>
+        </section>
+        <!-- Spinner  -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border  text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- modal portion -->
+        <section>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="aiDetailModal" tabindex="-1" aria-labelledby="aiDetailModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="aiDetailModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="ai-details" class="modal-body">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/AIitems.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
